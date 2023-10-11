@@ -28,6 +28,8 @@ body {
 }
 ol, ul {
 	list-style: none;
+	padding: 0;
+	padding-left: 0 !important;
 }
 blockquote, q {
 	quotes: none;
@@ -41,10 +43,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-a{
-	text-decoration: none;
-	color: "fff";
-}
+
 Link{
 	text-decoration: none;
 	color: aliceblue;

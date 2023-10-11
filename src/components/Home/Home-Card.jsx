@@ -13,6 +13,7 @@ const Card = styled.div`
     justify-content: space-around;
     padding: 2% 3%;
     width: 30%;
+    align-items: center;
 
     @media(max-width: 600px){
         width: 90%;

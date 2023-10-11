@@ -2,13 +2,17 @@ import styled from "styled-components";
 import ReactPlayer from "react-player/youtube";
 import imagemDeFundo01 from "../../assets/fundo/fundo-section-1.jpg";
 import HomeCard from "./Home-Card";
-import { Link } from "react-router-dom";
-const StyledLink = styled(Link)`
-  text-decoration: none;
-  color: inherit;
-`;
 
-import { Titulo01, Subtitulo01, Subtitulo02, BotaoPrimario01, BotaoPrimario02, BotaoSecundario01, Paragrafo01 } from "../Comun/Comum.jsx";
+
+import {
+  Titulo01,
+  Subtitulo01,
+  Subtitulo02,
+  BotaoPrimario01,
+  BotaoPrimario02,
+  BotaoSecundario01,
+  Paragrafo01,
+} from "../Comun/Comum.jsx";
 
 const HomeSection01 = styled.section`
   padding: 8% 2%;
@@ -44,7 +48,6 @@ const HomeSection01ConteudoBotoesContainer = styled.h2`
   gap: 1vw;
 `;
 
-
 const HomeSection02 = styled.section`
   padding: 8% 2%;
   width: 100%;
@@ -69,7 +72,6 @@ const Section02VideoPitchContainer = styled.div`
     gap: 10vw;
   }
 `;
-
 
 const Section02Video = styled.div`
   background: #eae8f0;
@@ -113,7 +115,7 @@ const HomeSection03CardContainer = styled.section`
     align-items: center;
     display: flex;
     gap: 5vw;
-    height: 50%;
+    height: 30vw;
     justify-content: space-between;
     width: 100%;
 
@@ -125,7 +127,6 @@ const HomeSection03CardContainer = styled.section`
     }
   }
 `;
-
 
 function Home() {
   const cardData = [
@@ -159,16 +160,12 @@ function Home() {
             ajudando você a tomar decisões bem-informadas.
           </Subtitulo02>
           <HomeSection01ConteudoBotoesContainer>
-            <BotaoPrimario01>
-              <StyledLink to="/consulta">
-                Consulte a sua localização{" "}
-                <i className="fas fa-arrow-right"></i>
-              </StyledLink>
+            <BotaoPrimario01 to="/consulta">
+              Consulte a sua localização
+              <i className="fas fa-arrow-right"></i>
             </BotaoPrimario01>
-            <BotaoSecundario01>
-              <StyledLink to="/projeto">
-                Saiba mais <i className="fas fa-arrow-right"></i>
-              </StyledLink>
+            <BotaoSecundario01 to="/projeto">
+              Saiba mais <i className="fas fa-arrow-right"></i>
             </BotaoSecundario01>
           </HomeSection01ConteudoBotoesContainer>
         </HomeSection01Conteudo>
@@ -176,8 +173,10 @@ function Home() {
 
       <HomeSection02>
         <Section02VideoPitchContainer>
-          <Subtitulo01 style={{color:"#5D5A88"}}>Vivencie e encontre.</Subtitulo01>
-          <Subtitulo02 style={{color:"#000"}}>
+          <Subtitulo01 style={{ color: "#5D5A88" }}>
+            Vivencie e encontre.
+          </Subtitulo01>
+          <Subtitulo02 style={{ color: "#000" }}>
             Motivos pelos quais você pode confiar em nós.
           </Subtitulo02>
           <Section02Video>
@@ -192,7 +191,9 @@ function Home() {
       </HomeSection02>
 
       <HomeSection03>
-      <Subtitulo01 style={{color:"#5D5A88"}}>Nossos Resultados</Subtitulo01>
+        <Subtitulo01 style={{ color: "#5D5A88" }}>
+          Nossos Resultados
+        </Subtitulo01>
         <HomeSection03CardContainer>
           {cardData.map((card, index) => (
             <HomeCard

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from "react-router-dom";
 
 export const Titulo01 = styled.h1`
     color: #fff;
@@ -39,7 +40,7 @@ export const Paragrafo01 = styled.p`
     font-weight: 400;
 `;
 
-export const BotaoPrimario01 = styled.button`
+export const BotaoPrimario01 = styled(Link)`
     color: #fff;
     text-align: center;
     font-feature-settings: "clig" off, "liga" off;
@@ -47,13 +48,14 @@ export const BotaoPrimario01 = styled.button`
     font-size: clamp(0.625rem, 0.509rem + 0.617vw, 1.25rem);
     font-style: normal;
     font-weight: 700;
-    border-radius: 40px;
+    border-radius: 9px;
     display: flex;
     padding: 2% 3%;
     align-items: center;
     gap: 8px;
     background-color: #238ca4;
     border: none;
+    transition: all 0.2s ease-in-out;
 
     &:hover {
     color: #fff;
@@ -69,7 +71,7 @@ export const BotaoPrimario02 = styled.button`
     font-size: clamp(0.625rem, 0.509rem + 0.617vw, 1.25rem);
     font-style: normal;
     font-weight: 700;
-    border-radius: 40px;
+    border-radius: 9px;
     display: flex;
     padding: 2% 3%;
     align-items: center;
@@ -78,6 +80,7 @@ export const BotaoPrimario02 = styled.button`
     background-color: #5D5A88;
     border: none;
     width: 100%;
+    transition: all 0.2s ease-in-out;
 
     &:hover {
     color: #fff;
@@ -85,7 +88,7 @@ export const BotaoPrimario02 = styled.button`
     }
 `
 
-export const BotaoSecundario01 = styled.button`
+export const BotaoSecundario01 = styled(Link)`
     color: #5d5a88;
     text-align: center;
     font-feature-settings: "clig" off, "liga" off;
@@ -93,13 +96,14 @@ export const BotaoSecundario01 = styled.button`
     font-size: clamp(0.625rem, 0.509rem + 0.617vw, 1.25rem);
     font-style: normal;
     font-weight: 700;
-    border-radius: 40px;
+    border-radius: 9px;
     display: flex;
     padding: 2% 3%;
     align-items: center;
     gap: 8px;
     background-color: #fff;
     border: 1px solid #d4d2e3;
+    transition: all 0.2s ease-in-out;
 
     &:hover {
     color: #fff;

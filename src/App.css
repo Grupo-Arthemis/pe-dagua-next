@@ -40,3 +40,12 @@
 .read-the-docs {
   color: #888;
 }
+
+a { 
+	text-decoration: none !important;
+	color: "#fff" !important;
+}
+Link { 
+	text-decoration: none !important;
+	color: "#fff" !important;
+}
