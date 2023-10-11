@@ -1,6 +1,12 @@
 import styled from 'styled-components';
-// import ApoioriaCards from './Apoio-cards';
+import ApoioriaCards from './Apoio-cards';
+import ApoioCarrossel from './Apoio-carrossel';
 import React from "react";
+
+import {
+  Titulo01,
+  Paragrafo01,
+} from "../Comun/Comum.jsx";
 
 import Foto_1 from '../../assets/projetosSociais/Foto (1).jpg';
 import Foto_2 from '../../assets/projetosSociais/Foto (2).jpg';
@@ -21,23 +27,13 @@ const ApoioSection01 = styled.div`
   background-color: #fff;
   align-items: center;
   gap: 10vh;
+  margin: 0 auto;
 `;
 
 const ApoioSection01Texto = styled.div`
   gap: 2vw;
   display: flex;
   flex-direction: column;
-`;
-
-const ApoioSection01H1 = styled.h1`
-  color: #5d5a88;
-  text-align: center;
-  font-feature-settings: 'clig' off, 'liga' off;
-  font-family: DM Sans;
-  font-size: clamp(2.188rem, 1.477rem + 1.894vw, 3.75rem);
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
 `;
 
 const ApoioSection01P = styled.p`
@@ -128,18 +124,19 @@ function Apoio() {
       ]
     
     return (
-        <div className="Perguntas">
+        <div className="Apoio">
             <ApoioSection01>
                 <ApoioSection01Texto>
-                    <ApoioSection01H1>Saiba onde apoiar</ApoioSection01H1> 
-                    <ApoioSection01P>Mesmo durante os momentos dificeis, a luz da esperança não pode ser apagada, saiba como ajudar:</ApoioSection01P>
+                    <Titulo01 style={{color:"#5d5a88"}}>Saiba onde apoiar</Titulo01> 
+                    <ApoioCarrossel />
+                    <Paragrafo01 style={{color:"#000"}}>Mesmo durante os momentos dificeis, a luz da esperança não pode ser apagada, saiba como ajudar:</Paragrafo01>
                 </ApoioSection01Texto>
                 <ApoioSection01Cards>
-{/* 
+
 
                 {Causas.map((Causa, index) => (
-                        <ApoioriaCards key={index} Title={Causa.Title} Description={Causa.Description} Image={Causa.Image} Link={Causa.Link} />
-                    ))} */}
+                        <ApoioriaCards key={index} title={Causa.Title} description={Causa.Description} image={Causa.Image} link={Causa.Link} />
+                    ))}
 
                 </ApoioSection01Cards>
             </ApoioSection01>

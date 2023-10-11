@@ -1,32 +1,24 @@
 import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+import Card from 'react-bootstrap/Card';
 
-export default function ActionAreaCard(
-  {Title, Description, Image, Link}
-) {
+import {
+  Subtitulo02,
+} from "../Comun/Comum.jsx";
+
+function ActionAreaCard({ title, description, image, link }) {
   return (
-    <a href={Link} target="_blank" rel="noopener noreferrer">
-      <Card sx={{ maxWidth: 345 }}>
-        <CardActionArea>
-          <CardMedia
-            component="img"
-            height="140"
-            image={Image}
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              {Title}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              {Description}
-            </Typography>
-          </CardContent>
-        </CardActionArea>
+    <a href={link} target="_blank" rel="noopener noreferrer">
+      <Card style={{ maxWidth: 345, height: "100%"}}>
+        <Card.Img variant="top" src={image} />
+        <Card.Body style={{display:"grid", gridTemplateRows: "40% 60%"}}>
+          <Subtitulo02 style={{color:"#5d5a88"}}>{title}</Subtitulo02>
+          <Card.Text style={{textAlign:"justify"}}>
+            {description}
+          </Card.Text>
+        </Card.Body>
       </Card>
     </a>
   );
 }
+
+export default ActionAreaCard;

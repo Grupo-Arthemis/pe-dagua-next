@@ -30,25 +30,17 @@ function SobreDropdown() {
         className={`dropdown-menu ${showDropdown ? 'show' : ''}`}
         aria-labelledby="dropdownMenuButton"
       >
-        <li>
-          <a className="dropdown-item" href="#">
+        <li className="dropdown-item">
             <Link01 to='/projeto'   className={location.pathname === '/projeto' ? 'ativo' : ''}>&nbsp; <i className='fas fa-angle-right'></i> Projeto</Link01>
-          </a>
-        </li>
-        <li>
-          <a className="dropdown-item" href="#">
+        </li >
+        <li className="dropdown-item">
             <Link01 to='/grupo'     className={location.pathname === '/grupo' ? 'ativo' : ''}>&nbsp; <i className='fas fa-angle-right'></i> Grupo</Link01>
-          </a>
-        </li>
-        <li>
-          <a className="dropdown-item" href="#">
+        </li >
+        <li className="dropdown-item">
             <Link01 to='/perguntas' className={location.pathname === '/perguntas' ? 'ativo' : ''}>&nbsp; <i className='fas fa-angle-right'></i> Perguntas</Link01>
-          </a>
         </li>
-        <li>
-          <a className="dropdown-item" href="#">
+        <li className="dropdown-item">
             <Link01 to='/contatos'  className={location.pathname === '/contatos' ? 'ativo' : ''}>&nbsp; <i className='fas fa-angle-right'></i> Contatos</Link01>
-          </a>
         </li>
       </ul>
     </div>

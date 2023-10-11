@@ -69,10 +69,10 @@ function Header() {
           </ul>
         </nav>
         <div className='header__login'>
-          <BotaoSecundario01 to="/projeto" style={{padding:"5px 16px"}}>
+          <BotaoSecundario01 to="/login" style={{padding:"5px 16px"}}>
             Login 
           </BotaoSecundario01>
-          <BotaoPrimario01 to="/consulta" style={{padding:"5px 16px"}}>
+          <BotaoPrimario01 to="/cadastro" style={{padding:"5px 16px"}}>
             Cadastro
           </BotaoPrimario01>
         </div>

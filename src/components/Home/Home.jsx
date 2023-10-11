@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import ReactPlayer from "react-player/youtube";
-import imagemDeFundo01 from "../../assets/fundo/fundo-section-1.jpg";
+import imagemDeFundo01 from "../../assets/Fundo-Section-1.svg";
 import HomeCard from "./Home-Card";
 
 
@@ -152,13 +152,13 @@ function Home() {
       <HomeSection01>
         <HomeSection01Conteudo>
           <Titulo01 style={{ textAlign: "start" }}>
-            Um sistema de alerta e monitoramento de enchentes
+            Um sistema de alerta de alagamentos e chuvas fortes
           </Titulo01>
-          <Subtitulo02 style={{ textAlign: "justify" }}>
+          <Paragrafo01 style={{ textAlign: "justify" }}>
             Mantenha-se seguro das águas. Sua fonte confiável para informações
             precisas e atualizadas sobre condições climáticas e níveis de água,
             ajudando você a tomar decisões bem-informadas.
-          </Subtitulo02>
+          </Paragrafo01>
           <HomeSection01ConteudoBotoesContainer>
             <BotaoPrimario01 to="/consulta">
               Consulte a sua localização
