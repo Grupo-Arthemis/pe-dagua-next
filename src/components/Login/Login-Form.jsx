@@ -49,7 +49,6 @@ function FormGroupExample() {
             console.log("Nome: " + data.Nome[i]);
             console.log("Email: " + data.Email[i]);
             console.log("Senha: " + data.Senha[i]);
-            console.log("CEP: " + data.CEP[i]);
             return true;
         }
     }
