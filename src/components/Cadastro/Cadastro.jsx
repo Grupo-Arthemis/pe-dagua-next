@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import LoginForm from './Login-Form';
-import ImagemGarota from '../../assets/Login-Garota.png'
+import CadastroForm from './Cadastro-Form';
 
 
 import React from "react";
@@ -16,14 +15,11 @@ import {
   } from "../Comun/Comum.jsx";
 
 
-
-
-
-const LoginSection01 = styled.div`
+const CadastroSection01 = styled.div`
   padding: 5% 2%;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 0.7fr 1.6fr 0.7fr;
   flex-direction: column;
   background-color: #fff;
   align-items: center;
@@ -56,21 +52,20 @@ const Garota = styled.img`
 
 
 
-function Login() {
+function Cadastro() {
 
     return (
-        <div className="Login">
-            <LoginSection01 >
-                <div style={{position:'relative'}}>
-                    <Garota src={ImagemGarota} alt="Garota" />
-                </div>
-                <LoginForm style={{position:'relative'}} />
-            </LoginSection01>
+        <div className="Cadastro">
+            <CadastroSection01 >
+                <div></div>
+                <CadastroForm style={{position:'relative'}} />
+                <div></div>
+            </CadastroSection01>
         </div>
     );
 }
 
-export default Login;
+export default Cadastro;
 
 
 

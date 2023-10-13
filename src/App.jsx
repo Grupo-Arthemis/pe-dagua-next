@@ -8,6 +8,7 @@ import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import Apoio from './components/Apoio/Apoio';
 import Login from './components/Login/Login';
+import Cadastro from './components/Cadastro/Cadastro';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/apoio" component={Apoio} />
         <Route path="/login" component={Login} />
+        <Route path="/cadastro" component={Cadastro} />
       </Switch>
       <Footer />
     </Router>
