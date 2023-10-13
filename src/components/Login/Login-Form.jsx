@@ -15,7 +15,7 @@ const BotaoLogin = styled.button`
   padding: 2% 3%;
   align-items: center;
   gap: 8px;
-  background-color: #238ca4;
+  background-color: #228CA3;
   border: none;
   transition: all 0.2s ease-in-out;
 
