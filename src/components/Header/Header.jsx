@@ -62,7 +62,7 @@ function Header() {
         </div>
         <nav className='header__menu'>
           <ul className='header__menu__lista'>
-            <li><Link01 to="/" className={location.pathname === '/' ? 'ativo' : ''}>Home</Link01></li>
+            <li><Link01 to="/home" className={location.pathname === '/' ? 'ativo' : ''}>Home</Link01></li>
             <li><Link01 to='/consulta' className={location.pathname === '/consulta' ? 'ativo' : ''}>Consulta</Link01></li>
             <li><Link01 to='/apoio' className={location.pathname === '/apoio' ? 'ativo' : ''}>Apoio</Link01></li>
             <li><SobreDropdown /></li>
@@ -88,7 +88,7 @@ function Header() {
           />
           <nav className={`header__menu ${isMenuExpanded ? 'header__menu__expandir' : ''}`}>
             <ul className='header__menu__lista'>
-              <li><Link to="/" className={location.pathname === '/' ? 'ativo' : ''}>Home</Link></li>
+              <li><Link to="/home" className={location.pathname === '/' ? 'ativo' : ''}>Home</Link></li>
               <li><Link to='/consulta' className={location.pathname === '/consulta' ? 'ativo' : ''}>Consulta</Link></li>
               <li><Link to='/apoio' className={location.pathname === '/apoio' ? 'ativo' : ''}>Apoio</Link></li>
               <li id='menuSobre'>
