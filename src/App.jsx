@@ -12,7 +12,7 @@ import Cadastro from './components/Cadastro/Cadastro';
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Header />
       <Switch>
         <Route exact path="/home" component={Home} />
@@ -21,7 +21,7 @@ function App() {
         <Route path="/cadastro" component={Cadastro} />
       </Switch>
       <Footer />
-    </BrowserRouter>
+    </Router>
   );
 }
 
